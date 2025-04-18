@@ -1,4 +1,5 @@
 import { useLanguage } from "@/context/language-context";
+import { CalendarDays, CheckCircle, Clock } from "lucide-react";
 
 export function Hero() {
   const { t } = useLanguage();
@@ -33,9 +34,9 @@ export function Hero() {
             
             <div className="mt-8 flex items-center">
               <div className="flex -space-x-2">
-                <img className="w-10 h-10 rounded-full border-2 border-dark-900" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="User" />
-                <img className="w-10 h-10 rounded-full border-2 border-dark-900" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="User" />
-                <img className="w-10 h-10 rounded-full border-2 border-dark-900" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="User" />
+                <img className="w-10 h-10 rounded-full border-2 border-dark-900" src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Dentista" />
+                <img className="w-10 h-10 rounded-full border-2 border-dark-900" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Dentista" />
+                <img className="w-10 h-10 rounded-full border-2 border-dark-900" src="https://images.unsplash.com/photo-1606265752439-1f18756111fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Dentista" />
               </div>
               <div className="ml-4">
                 <div className="flex items-center">
@@ -59,24 +60,25 @@ export function Hero() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-radial from-secondary-500/20 to-transparent"></div>
               <img 
-                src="https://images.unsplash.com/photo-1581089776575-1694bd55b0d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                alt="AI automation workspace" 
+                src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                alt="Consultório odontológico moderno" 
                 className="rounded-xl shadow-2xl relative z-10" 
               />
               
               {/* Floating Elements */}
               <div className="absolute -top-5 -left-5 glass p-3 rounded-lg shadow-glass text-white z-20 flex items-center space-x-2 text-sm">
-                <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                </svg>
-                <span>{t("notifications.invoice")}</span>
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                <span>{t("notifications.appointment")}</span>
               </div>
               
               <div className="absolute top-1/2 -right-5 glass p-3 rounded-lg shadow-glass text-white z-20 flex items-center space-x-2 text-sm">
-                <svg className="w-5 h-5 text-secondary-300" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path>
-                </svg>
+                <CalendarDays className="w-5 h-5 text-secondary-300" />
                 <span>{t("notifications.reminder")}</span>
+              </div>
+
+              <div className="absolute -bottom-5 left-1/3 glass p-3 rounded-lg shadow-glass text-white z-20 flex items-center space-x-2 text-sm">
+                <Clock className="w-5 h-5 text-secondary-300" />
+                <span>WhatsApp integrado</span>
               </div>
             </div>
           </div>

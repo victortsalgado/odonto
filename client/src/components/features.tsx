@@ -1,5 +1,12 @@
 import { useLanguage } from "@/context/language-context";
-import { Clock, FileText, CreditCard, Users, PieChart, Globe } from "lucide-react";
+import { 
+  CalendarClock, 
+  ClipboardCheck, 
+  MessageSquareText, 
+  PackageCheck, 
+  LineChart, 
+  BarChart3 
+} from "lucide-react";
 
 type FeatureProps = {
   icon: React.ReactNode;
@@ -24,32 +31,32 @@ export function Features() {
 
   const features = [
     {
-      icon: <Clock className="w-6 h-6 text-secondary-400" />,
+      icon: <CalendarClock className="w-6 h-6 text-secondary-400" />,
       title: t("features.timeTracking.title"),
       description: t("features.timeTracking.description"),
     },
     {
-      icon: <FileText className="w-6 h-6 text-secondary-400" />,
+      icon: <ClipboardCheck className="w-6 h-6 text-secondary-400" />,
       title: t("features.invoicing.title"),
       description: t("features.invoicing.description"),
     },
     {
-      icon: <CreditCard className="w-6 h-6 text-secondary-400" />,
+      icon: <MessageSquareText className="w-6 h-6 text-secondary-400" />,
       title: t("features.payment.title"),
       description: t("features.payment.description"),
     },
     {
-      icon: <Users className="w-6 h-6 text-secondary-400" />,
+      icon: <PackageCheck className="w-6 h-6 text-secondary-400" />,
       title: t("features.client.title"),
       description: t("features.client.description"),
     },
     {
-      icon: <PieChart className="w-6 h-6 text-secondary-400" />,
+      icon: <LineChart className="w-6 h-6 text-secondary-400" />,
       title: t("features.analytics.title"),
       description: t("features.analytics.description"),
     },
     {
-      icon: <Globe className="w-6 h-6 text-secondary-400" />,
+      icon: <BarChart3 className="w-6 h-6 text-secondary-400" />,
       title: t("features.language.title"),
       description: t("features.language.description"),
     },
