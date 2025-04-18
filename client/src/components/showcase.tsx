@@ -58,6 +58,14 @@ export function Showcase() {
                 <Check className="w-6 h-6 text-secondary-400 mt-0.5 mr-2" />
                 <span>{t("showcase.benefit3")}</span>
               </li>
+              <li className="flex items-start">
+                <Check className="w-6 h-6 text-secondary-400 mt-0.5 mr-2" />
+                <span>{t("showcase.benefit4")}</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="w-6 h-6 text-secondary-400 mt-0.5 mr-2" />
+                <span>{t("showcase.benefit5")}</span>
+              </li>
             </ul>
             
             <a href="#" className="bg-gradient-to-r from-secondary-400 to-secondary-600 text-white rounded-full px-8 py-3 font-medium hover:opacity-90 transition-opacity inline-block">

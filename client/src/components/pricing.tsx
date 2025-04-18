@@ -75,7 +75,8 @@ export function Pricing() {
     { text: t("pricing.starter.feature1") },
     { text: t("pricing.starter.feature2") },
     { text: t("pricing.starter.feature3") },
-    { text: t("pricing.starter.feature4") }
+    { text: t("pricing.starter.feature4") },
+    { text: t("pricing.starter.feature5") }
   ];
 
   const professionalFeatures = [
@@ -83,7 +84,8 @@ export function Pricing() {
     { text: t("pricing.professional.feature2") },
     { text: t("pricing.professional.feature3") },
     { text: t("pricing.professional.feature4") },
-    { text: t("pricing.professional.feature5") }
+    { text: t("pricing.professional.feature5") },
+    { text: t("pricing.professional.feature6") }
   ];
 
   const enterpriseFeatures = [
@@ -91,7 +93,8 @@ export function Pricing() {
     { text: t("pricing.enterprise.feature2") },
     { text: t("pricing.enterprise.feature3") },
     { text: t("pricing.enterprise.feature4") },
-    { text: t("pricing.enterprise.feature5") }
+    { text: t("pricing.enterprise.feature5") },
+    { text: t("pricing.enterprise.feature6") }
   ];
 
   return (
@@ -145,11 +148,11 @@ export function Pricing() {
           <div className="glass py-6 px-8 rounded-xl inline-block">
             <div className="flex items-center justify-center mb-4">
               <FileText className="w-6 h-6 text-secondary-400 mr-2" />
-              <h3 className="text-xl font-bold">Garantia de Satisfação</h3>
+              <h3 className="text-xl font-bold">{t("cta.note")}</h3>
             </div>
             <p className="text-dark-300">
-              Insatisfeito? Cancele nos primeiros 30 dias e receba reembolso integral.
-              <br />Sem burocracia, sem perguntas.
+              Agende uma demonstração gratuita hoje e descubra como a automação 
+              <br />pode transformar sua clínica odontológica em poucas semanas.
             </p>
           </div>
         </div>

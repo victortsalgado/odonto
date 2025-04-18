@@ -49,6 +49,14 @@ export function FAQ() {
     {
       question: t("faq.5.question"),
       answer: t("faq.5.answer")
+    },
+    {
+      question: t("faq.6.question"),
+      answer: t("faq.6.answer")
+    },
+    {
+      question: t("faq.7.question"),
+      answer: t("faq.7.answer")
     }
   ];
 
