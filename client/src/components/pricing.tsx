@@ -1,4 +1,3 @@
-import { useLanguage } from "@/context/language-context";
 import { Check, CalendarClock, MessageSquare, TrendingUp, FileText, BarChart3 } from "lucide-react";
 
 type PlanFeature = {
@@ -69,32 +68,30 @@ function PricingPlan({
 }
 
 export function Pricing() {
-  const { t } = useLanguage();
-
   const starterFeatures = [
-    { text: t("pricing.starter.feature1") },
-    { text: t("pricing.starter.feature2") },
-    { text: t("pricing.starter.feature3") },
-    { text: t("pricing.starter.feature4") },
-    { text: t("pricing.starter.feature5") }
+    { text: "Agendamento via WhatsApp 24/7" },
+    { text: "Lembretes e confirmações automáticas" },
+    { text: "Formulários digitais pré-consulta" },
+    { text: "Suporte técnico via e-mail" },
+    { text: "Implementação em até 2 semanas" }
   ];
 
   const professionalFeatures = [
-    { text: t("pricing.professional.feature1") },
-    { text: t("pricing.professional.feature2") },
-    { text: t("pricing.professional.feature3") },
-    { text: t("pricing.professional.feature4") },
-    { text: t("pricing.professional.feature5") },
-    { text: t("pricing.professional.feature6") }
+    { text: "Tudo do plano Inicial, mais:" },
+    { text: "Follow-up e reativação automáticos" },
+    { text: "Controle de estoque integrado" },
+    { text: "Faturamento e NF-e automatizados" },
+    { text: "Suporte prioritário via WhatsApp" },
+    { text: "Dashboard de KPIs personalizado" }
   ];
 
   const enterpriseFeatures = [
-    { text: t("pricing.enterprise.feature1") },
-    { text: t("pricing.enterprise.feature2") },
-    { text: t("pricing.enterprise.feature3") },
-    { text: t("pricing.enterprise.feature4") },
-    { text: t("pricing.enterprise.feature5") },
-    { text: t("pricing.enterprise.feature6") }
+    { text: "Tudo do plano Profissional, mais:" },
+    { text: "Marketing e captação automatizados" },
+    { text: "Multi-unidades com gestão centralizada" },
+    { text: "Integrações personalizadas" },
+    { text: "Consultoria estratégica mensal" },
+    { text: "Implementação prioritária VIP" }
   ];
 
   return (
@@ -102,43 +99,43 @@ export function Pricing() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            {t("pricing.title")}
+            Planos Personalizados para Seu Consultório
           </h2>
           <p className="text-dark-300 max-w-2xl mx-auto">
-            {t("pricing.subtitle")}
+            Escolha o plano ideal para o tamanho da sua clínica odontológica. Todos incluem implementação assistida e suporte técnico, sem necessidade de conhecimentos técnicos.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <PricingPlan
-            title={t("pricing.starter.title")}
-            description={t("pricing.starter.description")}
-            price={t("pricing.starter.price")}
-            period={t("pricing.starter.period")}
+            title="Inicial"
+            description="Para clínicas pequenas com até 2 cadeiras"
+            price="R$497"
+            period="/mês"
             features={starterFeatures}
-            cta={t("pricing.starter.cta")}
+            cta="Começar Gratuitamente"
             icon={<CalendarClock className="w-6 h-6 text-secondary-400" />}
           />
           
           <PricingPlan
-            title={t("pricing.professional.title")}
-            description={t("pricing.professional.description")}
-            price={t("pricing.professional.price")}
-            period={t("pricing.professional.period")}
+            title="Profissional"
+            description="Para clínicas médias com 3 a 5 cadeiras"
+            price="R$997"
+            period="/mês"
             features={professionalFeatures}
-            cta={t("pricing.professional.cta")}
+            cta="Agendar Demonstração"
             isPopular={true}
-            tag={t("pricing.professional.tag")}
+            tag="MAIS POPULAR"
             icon={<MessageSquare className="w-6 h-6 text-secondary-400" />}
           />
           
           <PricingPlan
-            title={t("pricing.enterprise.title")}
-            description={t("pricing.enterprise.description")}
-            price={t("pricing.enterprise.price")}
-            period={t("pricing.enterprise.period")}
+            title="Premium"
+            description="Para clínicas e redes com 6+ cadeiras"
+            price="R$1.997"
+            period="/mês"
             features={enterpriseFeatures}
-            cta={t("pricing.enterprise.cta")}
+            cta="Falar com Especialista"
             icon={<BarChart3 className="w-6 h-6 text-secondary-400" />}
           />
         </div>
@@ -148,7 +145,7 @@ export function Pricing() {
           <div className="glass py-6 px-8 rounded-xl inline-block">
             <div className="flex items-center justify-center mb-4">
               <FileText className="w-6 h-6 text-secondary-400 mr-2" />
-              <h3 className="text-xl font-bold">{t("cta.note")}</h3>
+              <h3 className="text-xl font-bold">Implementação assistida e garantia de satisfação de 30 dias. Sem contratos de fidelidade.</h3>
             </div>
             <p className="text-dark-300">
               Agende uma demonstração gratuita hoje e descubra como a automação 

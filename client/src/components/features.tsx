@@ -1,11 +1,12 @@
-import { useLanguage } from "@/context/language-context";
 import { 
   CalendarClock, 
   ClipboardCheck, 
   MessageSquareText, 
   PackageCheck, 
   LineChart, 
-  BarChart3 
+  BarChart3,
+  FileImage,
+  Share2 
 } from "lucide-react";
 
 type FeatureProps = {
@@ -27,38 +28,46 @@ function Feature({ icon, title, description }: FeatureProps) {
 }
 
 export function Features() {
-  const { t } = useLanguage();
-
   const features = [
     {
       icon: <CalendarClock className="w-6 h-6 text-secondary-400" />,
-      title: t("features.timeTracking.title"),
-      description: t("features.timeTracking.description"),
+      title: "Agendamento & Lembretes",
+      description: "Chatbot WhatsApp inteligente para agendamentos 24/7, confirmações e lembretes automáticos via SMS/e-mail com possibilidade de reagendamento. Reduza faltas em até 70% e maximize sua agenda.",
     },
     {
       icon: <ClipboardCheck className="w-6 h-6 text-secondary-400" />,
-      title: t("features.invoicing.title"),
-      description: t("features.invoicing.description"),
+      title: "Fluxo de Recepção",
+      description: "Formulários digitais pré-consulta enviados automaticamente, anamnese online integrada ao prontuário e check-in digital para eliminar papéis e reduzir o tempo de espera na recepção em até 80%.",
     },
     {
       icon: <MessageSquareText className="w-6 h-6 text-secondary-400" />,
-      title: t("features.payment.title"),
-      description: t("features.payment.description"),
+      title: "Follow-up e Reativação",
+      description: "Sequências automáticas pós-consulta com instruções personalizadas, mensagens de recuperação para pacientes com tratamentos incompletos e campanhas de reativação. Aumente a taxa de retorno em até 45%.",
     },
     {
       icon: <PackageCheck className="w-6 h-6 text-secondary-400" />,
-      title: t("features.client.title"),
-      description: t("features.client.description"),
+      title: "Controle de Estoque",
+      description: "Monitoramento automático do consumo de materiais por procedimento, integração com sistemas de gestão existentes, alertas de nível mínimo e sugestões de compra baseadas em histórico e sazonalidade.",
     },
     {
       icon: <LineChart className="w-6 h-6 text-secondary-400" />,
-      title: t("features.analytics.title"),
-      description: t("features.analytics.description"),
+      title: "Faturamento & Financeiro",
+      description: "Emissão automática de notas fiscais, geração de boletos/links de pagamento, conciliação bancária integrada e relatórios financeiros personalizados para diferentes convênios e procedimentos.",
     },
     {
       icon: <BarChart3 className="w-6 h-6 text-secondary-400" />,
-      title: t("features.language.title"),
-      description: t("features.language.description"),
+      title: "Relatórios & KPIs",
+      description: "Dashboards interativos atualizados em tempo real, métricas essenciais para gestão (ticket médio, taxa de conversão, LTV, etc) e relatórios enviados automaticamente para sócios e gestores conforme periodicidade definida.",
+    },
+    {
+      icon: <FileImage className="w-6 h-6 text-secondary-400" />,
+      title: "Prontuário & Imagens Digitais",
+      description: "Armazenamento centralizado de radiografias, fotos e documentos de pacientes com acesso seguro via nuvem, backup automático e categorização inteligente por IA.",
+    },
+    {
+      icon: <Share2 className="w-6 h-6 text-secondary-400" />,
+      title: "Marketing & Indicações",
+      description: "Fluxos de nutrição com conteúdo educativo, sistema de incentivo a indicações com tracking e recompensas, e campanhas sazonais automatizadas para tratamentos específicos.",
     },
   ];
 
@@ -67,10 +76,10 @@ export function Features() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            {t("features.title")}
+            Automação Completa de Ponta a Ponta
           </h2>
           <p className="text-dark-300 max-w-2xl mx-auto">
-            {t("features.subtitle")}
+            Uma solução abrangente que automatiza todos os processos operacionais da sua clínica, desde o primeiro contato até o pós-tratamento, permitindo que você foque no que realmente importa: cuidar dos pacientes.
           </p>
         </div>
         

@@ -1,9 +1,6 @@
-import { useLanguage } from "@/context/language-context";
 import { CalendarDays, CheckCircle, Clock } from "lucide-react";
 
 export function Hero() {
-  const { t } = useLanguage();
-
   return (
     <section className="relative pt-20 pb-32 overflow-hidden hero-gradient">
       <div className="container mx-auto px-4">
@@ -13,22 +10,19 @@ export function Hero() {
             <h1 
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
               dangerouslySetInnerHTML={{
-                __html: t("hero.title").replace(
-                  "<span>",
-                  "<span class='text-transparent bg-clip-text bg-gradient-to-r from-secondary-300 to-secondary-500'>"
-                )
+                __html: "Automatize Sua <span class='text-transparent bg-clip-text bg-gradient-to-r from-secondary-300 to-secondary-500'>Clínica Odontológica</span> com IA"
               }}
             ></h1>
             <p className="text-lg md:text-xl text-dark-300 mb-8 max-w-lg">
-              {t("hero.subtitle")}
+              Solução completa de automação end-to-end para agendar consultas, enviar lembretes, fazer follow-up, controlar estoque, gerar relatórios e muito mais utilizando Make + ChatGPT.
             </p>
             
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <a href="#" className="bg-gradient-to-r from-secondary-400 to-secondary-600 text-white text-center rounded-full px-8 py-3 font-medium hover:opacity-90 transition-opacity">
-                {t("hero.cta.trial")}
+                Iniciar Gratuitamente
               </a>
               <a href="#" className="glass text-white text-center rounded-full px-8 py-3 font-medium hover:bg-dark-800 transition-colors">
-                {t("hero.cta.demo")}
+                Agendar Demonstração
               </a>
             </div>
             
@@ -49,7 +43,7 @@ export function Hero() {
                   </div>
                 </div>
                 <p className="text-sm text-dark-300">
-                  {t("hero.rating")}
+                  4.9/5 com mais de 2.000 avaliações de clínicas parceiras
                 </p>
               </div>
             </div>
@@ -68,12 +62,12 @@ export function Hero() {
               {/* Floating Elements */}
               <div className="absolute -top-5 -left-5 glass p-3 rounded-lg shadow-glass text-white z-20 flex items-center space-x-2 text-sm">
                 <CheckCircle className="w-5 h-5 text-green-400" />
-                <span>{t("notifications.appointment")}</span>
+                <span>Consulta Confirmada com Sucesso</span>
               </div>
               
               <div className="absolute top-1/2 -right-5 glass p-3 rounded-lg shadow-glass text-white z-20 flex items-center space-x-2 text-sm">
                 <CalendarDays className="w-5 h-5 text-secondary-300" />
-                <span>{t("notifications.reminder")}</span>
+                <span>Lembrete de Consulta Agendada</span>
               </div>
 
               <div className="absolute -bottom-5 left-1/3 glass p-3 rounded-lg shadow-glass text-white z-20 flex items-center space-x-2 text-sm">

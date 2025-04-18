@@ -1,9 +1,6 @@
-import { useLanguage } from "@/context/language-context";
 import { Check, Share2, Users, TrendingUp } from "lucide-react";
 
 export function Showcase() {
-  const { t } = useLanguage();
-
   return (
     <section className="py-20 bg-dark-900">
       <div className="container mx-auto px-4">
@@ -39,37 +36,37 @@ export function Showcase() {
           {/* Content */}
           <div className="w-full lg:w-1/2 lg:pl-16 order-1 lg:order-2">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t("showcase.title")}
+              Captação & Conversão de Pacientes
             </h2>
             <p className="text-dark-300 text-lg mb-8">
-              {t("showcase.description")}
+              Automatize todo o funil de vendas da sua clínica, desde a geração de leads via Instagram até o fechamento via WhatsApp. Nossa solução integra marketing digital, pré-vendas e follow-up para maximizar sua taxa de conversão.
             </p>
             
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
                 <Check className="w-6 h-6 text-secondary-400 mt-0.5 mr-2" />
-                <span>{t("showcase.benefit1")}</span>
+                <span>Campanhas de Instagram com direcionamento automático para atendimento pelo WhatsApp Business</span>
               </li>
               <li className="flex items-start">
                 <Check className="w-6 h-6 text-secondary-400 mt-0.5 mr-2" />
-                <span>{t("showcase.benefit2")}</span>
+                <span>Chatbot de qualificação e triagem integrado ao seu CRM ou sistema de gestão odontológica</span>
               </li>
               <li className="flex items-start">
                 <Check className="w-6 h-6 text-secondary-400 mt-0.5 mr-2" />
-                <span>{t("showcase.benefit3")}</span>
+                <span>Recontato automático de leads com mensagens personalizadas baseadas no histórico de interação</span>
               </li>
               <li className="flex items-start">
                 <Check className="w-6 h-6 text-secondary-400 mt-0.5 mr-2" />
-                <span>{t("showcase.benefit4")}</span>
+                <span>Envio programado de materiais educativos e depoimentos adaptados ao interesse do paciente</span>
               </li>
               <li className="flex items-start">
                 <Check className="w-6 h-6 text-secondary-400 mt-0.5 mr-2" />
-                <span>{t("showcase.benefit5")}</span>
+                <span>Aumento médio de 40% na conversão de orçamentos em apenas 3 meses de implementação</span>
               </li>
             </ul>
             
             <a href="#" className="bg-gradient-to-r from-secondary-400 to-secondary-600 text-white rounded-full px-8 py-3 font-medium hover:opacity-90 transition-opacity inline-block">
-              {t("showcase.cta")}
+              Conhecer Estratégia Completa
             </a>
           </div>
         </div>
