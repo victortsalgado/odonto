@@ -1,23 +1,13 @@
 import { useState } from "react";
 import { Logo } from "./ui/logo";
 import { useLanguage } from "@/context/language-context";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export function Header() {
-  const { t, language, changeLanguage } = useLanguage();
+  const { t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
-  const toggleLanguageDropdown = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setLanguageDropdownOpen(!languageDropdownOpen);
-  };
-
-  const handleLanguageChange = (lang: string) => {
-    changeLanguage(lang);
-    setLanguageDropdownOpen(false);
-  };
 
   return (
     <header className="sticky top-0 z-50 glass shadow-glass">
@@ -38,36 +28,6 @@ export function Header() {
         
         {/* Right Side Menu */}
         <div className="flex items-center space-x-4">
-          {/* Language Selector */}
-          <div className="relative">
-            <button 
-              className="flex items-center text-dark-300 hover:text-white transition-colors"
-              onClick={toggleLanguageDropdown}
-            >
-              <span className="mr-1">{language.toUpperCase()}</span>
-              <ChevronDown className="w-4 h-4" />
-            </button>
-            
-            {languageDropdownOpen && (
-              <div className="absolute right-0 mt-2 py-1 w-24 glass rounded-md shadow-lg z-50">
-                <a 
-                  href="#" 
-                  className="block px-4 py-2 text-sm text-dark-300 hover:text-white hover:bg-dark-800"
-                  onClick={() => handleLanguageChange("en")}
-                >
-                  English
-                </a>
-                <a 
-                  href="#" 
-                  className="block px-4 py-2 text-sm text-dark-300 hover:text-white hover:bg-dark-800"
-                  onClick={() => handleLanguageChange("pt")}
-                >
-                  Português
-                </a>
-              </div>
-            )}
-          </div>
-          
           {/* Login / Get Started */}
           <div className="hidden md:flex items-center space-x-3">
             <a href="#" className="text-dark-300 hover:text-white transition-colors">{t("nav.login")}</a>

@@ -1,17 +1,14 @@
-import { createContext, useState, useContext, ReactNode } from "react";
-import enTranslations from "@shared/translations/en";
+import { createContext, useContext, ReactNode } from "react";
 import ptTranslations from "@shared/translations/pt";
 
 type LanguageContextType = {
   language: string;
   t: (key: string) => string;
-  changeLanguage: (lang: string) => void;
 };
 
 const defaultContext: LanguageContextType = {
-  language: "en",
+  language: "pt",
   t: (key: string) => key,
-  changeLanguage: () => {},
 };
 
 const LanguageContext = createContext<LanguageContextType>(defaultContext);
@@ -25,20 +22,16 @@ type LanguageProviderProps = {
 };
 
 export function LanguageProvider({ children }: LanguageProviderProps) {
-  const [language, setLanguage] = useState("en");
-  const [translations, setTranslations] = useState(enTranslations);
-
-  const changeLanguage = (lang: string) => {
-    setLanguage(lang);
-    setTranslations(lang === "en" ? enTranslations : ptTranslations);
-  };
+  // Sempre português fixo
+  const language = "pt";
+  const translations = ptTranslations;
 
   const t = (key: string): string => {
     return translations[key] || key;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, t, changeLanguage }}>
+    <LanguageContext.Provider value={{ language, t }}>
       {children}
     </LanguageContext.Provider>
   );

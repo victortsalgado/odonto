@@ -7,8 +7,6 @@ import { Testimonials } from "@/components/testimonials";
 import { FAQ } from "@/components/faq";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
-import { TourButton } from "@/components/ui/tour-button";
-import { TourProvider } from "@/context/tour-context";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -44,23 +42,18 @@ export default function Home() {
   }, []);
 
   return (
-    <TourProvider>
-      <div className="min-h-screen">
-        <Header />
-        <main>
-          <div id="hero-section">
-            <Hero />
-          </div>
-          <Features />
-          <Showcase />
-          <Pricing />
-          <Testimonials />
-          <FAQ />
-          <CTA />
-        </main>
-        <Footer />
-        <TourButton />
-      </div>
-    </TourProvider>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+        <Showcase />
+        <Pricing />
+        <Testimonials />
+        <FAQ />
+        <CTA />
+      </main>
+      <Footer />
+    </div>
   );
 }
