@@ -1,5 +1,5 @@
 import { useLanguage } from "@/context/language-context";
-import { Check } from "lucide-react";
+import { Check, CalendarClock, MessageSquare, TrendingUp, FileText, BarChart3 } from "lucide-react";
 
 type PlanFeature = {
   text: string;
@@ -14,6 +14,7 @@ type PricingPlanProps = {
   cta: string;
   isPopular?: boolean;
   tag?: string;
+  icon?: React.ReactNode;
 };
 
 function PricingPlan({
@@ -24,7 +25,8 @@ function PricingPlan({
   features,
   cta,
   isPopular = false,
-  tag
+  tag,
+  icon
 }: PricingPlanProps) {
   return (
     <div className={`glass rounded-xl p-8 border ${isPopular ? 'border-2 border-secondary-400' : 'border-dark-700'} relative transition-transform duration-300 hover:-translate-y-2`}>
@@ -34,9 +36,12 @@ function PricingPlan({
         </div>
       )}
       
-      <div className="mb-6">
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-dark-400">{description}</p>
+      <div className="mb-6 flex items-center">
+        {icon && <div className="mr-4 bg-secondary-500/20 p-3 rounded-full">{icon}</div>}
+        <div>
+          <h3 className="text-xl font-bold mb-2">{title}</h3>
+          <p className="text-dark-400">{description}</p>
+        </div>
       </div>
       
       <div className="mb-6">
@@ -55,7 +60,7 @@ function PricingPlan({
       
       <a 
         href="#" 
-        className={`block text-center ${isPopular ? 'bg-gradient-to-r from-secondary-400 to-secondary-600 text-white hover:opacity-90 transition-opacity' : 'bg-dark-700 hover:bg-dark-600 text-white transition-colors'} rounded-full px-6 py-3 font-medium`}
+        className={`block text-center ${isPopular ? 'bg-gradient-to-r from-secondary-400 to-secondary-600 text-white hover:opacity-90 transition-opacity' : 'glass text-white hover:bg-dark-800 transition-colors'} rounded-full px-6 py-3 font-medium`}
       >
         {cta}
       </a>
@@ -109,6 +114,7 @@ export function Pricing() {
             period={t("pricing.starter.period")}
             features={starterFeatures}
             cta={t("pricing.starter.cta")}
+            icon={<CalendarClock className="w-6 h-6 text-secondary-400" />}
           />
           
           <PricingPlan
@@ -120,6 +126,7 @@ export function Pricing() {
             cta={t("pricing.professional.cta")}
             isPopular={true}
             tag={t("pricing.professional.tag")}
+            icon={<MessageSquare className="w-6 h-6 text-secondary-400" />}
           />
           
           <PricingPlan
@@ -129,7 +136,22 @@ export function Pricing() {
             period={t("pricing.enterprise.period")}
             features={enterpriseFeatures}
             cta={t("pricing.enterprise.cta")}
+            icon={<BarChart3 className="w-6 h-6 text-secondary-400" />}
           />
+        </div>
+        
+        {/* Garantia */}
+        <div className="mt-16 text-center">
+          <div className="glass py-6 px-8 rounded-xl inline-block">
+            <div className="flex items-center justify-center mb-4">
+              <FileText className="w-6 h-6 text-secondary-400 mr-2" />
+              <h3 className="text-xl font-bold">Garantia de Satisfação</h3>
+            </div>
+            <p className="text-dark-300">
+              Insatisfeito? Cancele nos primeiros 30 dias e receba reembolso integral.
+              <br />Sem burocracia, sem perguntas.
+            </p>
+          </div>
         </div>
       </div>
     </section>

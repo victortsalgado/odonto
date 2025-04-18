@@ -1,6 +1,7 @@
 import { useLanguage } from "@/context/language-context";
 import { Logo } from "./ui/logo";
-import { Twitter, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Instagram, MessageSquare, Headset, Video } from "lucide-react";
+import { SiMake, SiTiktok } from "react-icons/si";
 
 export function Footer() {
   const { t } = useLanguage();
@@ -17,18 +18,35 @@ export function Footer() {
             <p className="text-dark-300 mb-4 max-w-sm">
               {t("footer.about")}
             </p>
+            
+            {/* Tecnologias */}
+            <div className="mb-5">
+              <p className="text-dark-400 mb-2 text-sm">Tecnologias:</p>
+              <div className="flex items-center space-x-3 text-dark-300">
+                <div className="flex items-center">
+                  <SiMake className="w-5 h-5 mr-1" />
+                  <span className="text-sm">Make</span>
+                </div>
+                <div className="flex items-center">
+                  <MessageSquare className="w-4 h-4 mr-1" />
+                  <span className="text-sm">ChatGPT</span>
+                </div>
+                <div className="flex items-center">
+                  <Headset className="w-4 h-4 mr-1" />
+                  <span className="text-sm">API</span>
+                </div>
+              </div>
+            </div>
+            
             <div className="flex space-x-4">
-              <a href="#" className="text-dark-400 hover:text-white transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-dark-400 hover:text-white transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
               <a href="#" className="text-dark-400 hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="#" className="text-dark-400 hover:text-white transition-colors">
-                <Linkedin className="w-5 h-5" />
+                <SiTiktok className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-dark-400 hover:text-white transition-colors">
+                <MessageSquare className="w-5 h-5" />
               </a>
             </div>
           </div>
