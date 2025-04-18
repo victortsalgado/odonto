@@ -39,19 +39,19 @@ export function Testimonials() {
       quote: t("testimonials.1.quote"),
       name: t("testimonials.1.name"),
       role: t("testimonials.1.role"),
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
     },
     {
       quote: t("testimonials.2.quote"),
       name: t("testimonials.2.name"),
       role: t("testimonials.2.role"),
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
     },
     {
       quote: t("testimonials.3.quote"),
       name: t("testimonials.3.name"),
       role: t("testimonials.3.role"),
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+      image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
     }
   ];
 

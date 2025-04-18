@@ -1,4 +1,5 @@
 import { useLanguage } from "@/context/language-context";
+import { Calendar, MessageSquare, TrendingUp } from "lucide-react";
 
 export function CTA() {
   const { t } = useLanguage();
@@ -25,6 +26,25 @@ export function CTA() {
           <p className="text-lg md:text-xl text-dark-300 mb-10 max-w-2xl mx-auto">
             {t("cta.subtitle")}
           </p>
+          
+          {/* Benefícios destacados */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <div className="glass rounded-lg p-6">
+              <Calendar className="w-10 h-10 text-secondary-400 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Agendamentos</h3>
+              <p className="text-dark-300">Automatize todos seus agendamentos e lembretes</p>
+            </div>
+            <div className="glass rounded-lg p-6">
+              <MessageSquare className="w-10 h-10 text-secondary-400 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">WhatsApp</h3>
+              <p className="text-dark-300">Atendimento automático e personalizado</p>
+            </div>
+            <div className="glass rounded-lg p-6">
+              <TrendingUp className="w-10 h-10 text-secondary-400 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Resultados</h3>
+              <p className="text-dark-300">Aumente receitas e reduza custos operacionais</p>
+            </div>
+          </div>
           
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a href="#" className="bg-gradient-to-r from-secondary-400 to-secondary-600 text-white rounded-full px-8 py-4 font-medium hover:opacity-90 transition-opacity">
