@@ -7,123 +7,123 @@ const enTranslations: Record<string, string> = {
   "nav.getStarted": "Get Started",
 
   // Hero Section
-  "hero.title": "Automate Your <span>Creative Business</span>",
-  "hero.subtitle": "Track hours, generate invoices, and focus on what you do best - creating amazing work.",
-  "hero.cta.trial": "Start Free Trial",
+  "hero.title": "Automate Your <span>Dental Clinic</span>",
+  "hero.subtitle": "Complete end-to-end automation solution for scheduling appointments, sending reminders and following up using Make and ChatGPT.",
+  "hero.cta.trial": "Get Started Now",
   "hero.cta.demo": "See Demo",
-  "hero.rating": "4.9/5 from over 2,000 users",
+  "hero.rating": "4.9/5 from over 2,000 clinics",
 
   // Features Section
-  "features.title": "Powerful Features for Creatives",
-  "features.subtitle": "Everything you need to manage your creative business efficiently and focus on what matters most.",
+  "features.title": "Complete Automation for Clinics",
+  "features.subtitle": "A comprehensive solution to automate all processes in your dental clinic and increase operational efficiency.",
   
-  "features.timeTracking.title": "Time Tracking",
-  "features.timeTracking.description": "Track hours spent on projects with precision. Start and stop timers with a single click.",
+  "features.timeTracking.title": "Scheduling & Reminders",
+  "features.timeTracking.description": "Chatbot for booking via WhatsApp/website, automatic SMS/email for confirmation and appointment reminders. Reduce no-shows and optimize your schedule.",
   
-  "features.invoicing.title": "Automated Invoicing",
-  "features.invoicing.description": "Generate professional invoices based on tracked hours and project rates. Save time on billing.",
+  "features.invoicing.title": "Reception Workflow",
+  "features.invoicing.description": "Online registration and anamnesis forms integrated with electronic medical records. Eliminate paperwork and streamline patient check-in.",
   
-  "features.payment.title": "Payment Processing",
-  "features.payment.description": "Accept payments directly through multiple methods. Get paid faster for your creative work.",
+  "features.payment.title": "Follow-up & Reactivation",
+  "features.payment.description": "Automatic email/SMS sequences for post-appointment and inactive patient reactivation flows. Increase return rates.",
   
-  "features.client.title": "Client Management",
-  "features.client.description": "Organize client information, projects, and communication in one place. Build stronger relationships.",
+  "features.client.title": "Inventory Control",
+  "features.client.description": "Integration with ERP/spreadsheets and automatic alerts for minimum stock levels. Avoid shortages and emergency purchases.",
   
-  "features.analytics.title": "Analytics & Reports",
-  "features.analytics.description": "Gain insights from powerful reports. Understand your business and make informed decisions.",
+  "features.analytics.title": "Billing & Financial",
+  "features.analytics.description": "Automatic generation of forms, invoices and payment slips from appointments. Reduce rework and payment delays.",
   
-  "features.language.title": "Multi-Language Support",
-  "features.language.description": "Use the platform in your preferred language. Expand your creative business globally.",
+  "features.language.title": "Reports & KPIs",
+  "features.language.description": "Dashboards in Google Sheets, Tableau or Power BI with schedule/CRM data. Get real-time insights for strategic decisions.",
 
   // Showcase Section
-  "showcase.title": "Transform Your Creative Workflow",
-  "showcase.description": "Stop wasting time on administrative tasks and focus on what you do best. Our AI-powered platform handles the business side of creativity.",
-  "showcase.benefit1": "Save up to 10 hours per week on administrative tasks",
-  "showcase.benefit2": "Get paid 2x faster with automated invoicing",
-  "showcase.benefit3": "Reduce billing errors by 95% with AI verification",
+  "showcase.title": "Marketing & Referrals",
+  "showcase.description": "Automate new patient acquisition and relationships with current ones. Our automation tools take care of the business side while you focus on patient care.",
+  "showcase.benefit1": "Automatic nurturing flows with educational content about oral health",
+  "showcase.benefit2": "Patient referral programs with tracking and rewards",
+  "showcase.benefit3": "Average 40% increase in new patient acquisition within 3 months",
   "showcase.cta": "Learn More",
 
   // Pricing Section
-  "pricing.title": "Simple, Transparent Pricing",
-  "pricing.subtitle": "Choose the plan that's right for your creative business. All plans include a 14-day free trial.",
+  "pricing.title": "Custom Plans for Clinics",
+  "pricing.subtitle": "Choose the ideal plan for your dental clinic's size. All plans include assisted implementation.",
   
   "pricing.starter.title": "Starter",
-  "pricing.starter.description": "For freelancers and solo creators",
-  "pricing.starter.price": "$19",
+  "pricing.starter.description": "For small clinics with up to 2 chairs",
+  "pricing.starter.price": "$497",
   "pricing.starter.period": "/month",
-  "pricing.starter.feature1": "Unlimited time tracking",
-  "pricing.starter.feature2": "10 clients",
-  "pricing.starter.feature3": "Basic invoice generation",
+  "pricing.starter.feature1": "WhatsApp scheduling",
+  "pricing.starter.feature2": "Automatic reminders",
+  "pricing.starter.feature3": "Basic digital forms",
   "pricing.starter.feature4": "Email support",
-  "pricing.starter.cta": "Start Free Trial",
+  "pricing.starter.cta": "Get Started Now",
   
   "pricing.professional.title": "Professional",
-  "pricing.professional.description": "For professional creatives and small studios",
-  "pricing.professional.price": "$49",
+  "pricing.professional.description": "For medium clinics with 3-5 chairs",
+  "pricing.professional.price": "$997",
   "pricing.professional.period": "/month",
   "pricing.professional.tag": "MOST POPULAR",
   "pricing.professional.feature1": "Everything in Starter, plus:",
-  "pricing.professional.feature2": "Unlimited clients",
-  "pricing.professional.feature3": "Advanced invoice customization",
-  "pricing.professional.feature4": "Online payment processing",
+  "pricing.professional.feature2": "Custom follow-up flows",
+  "pricing.professional.feature3": "Basic inventory control",
+  "pricing.professional.feature4": "Automated billing",
   "pricing.professional.feature5": "Priority support",
-  "pricing.professional.cta": "Start Free Trial",
+  "pricing.professional.cta": "Get Started Now",
   
-  "pricing.enterprise.title": "Enterprise",
-  "pricing.enterprise.description": "For creative agencies and large teams",
-  "pricing.enterprise.price": "$129",
+  "pricing.enterprise.title": "Premium",
+  "pricing.enterprise.description": "For large clinics with 6+ chairs",
+  "pricing.enterprise.price": "$1,997",
   "pricing.enterprise.period": "/month",
   "pricing.enterprise.feature1": "Everything in Professional, plus:",
-  "pricing.enterprise.feature2": "Team management tools",
-  "pricing.enterprise.feature3": "Advanced analytics and reporting",
+  "pricing.enterprise.feature2": "Complete automated marketing",
+  "pricing.enterprise.feature3": "Advanced dashboards & KPIs",
   "pricing.enterprise.feature4": "Custom integrations",
-  "pricing.enterprise.feature5": "Dedicated account manager",
-  "pricing.enterprise.cta": "Contact Sales",
+  "pricing.enterprise.feature5": "Dedicated success consultant",
+  "pricing.enterprise.cta": "Talk to a Consultant",
 
   // Testimonials Section
-  "testimonials.title": "Trusted by Creatives Worldwide",
-  "testimonials.subtitle": "Here's what our customers have to say about how we've transformed their creative workflow.",
+  "testimonials.title": "Clinics That Transformed Their Results",
+  "testimonials.subtitle": "See how dozens of dental clinics have optimized their processes and increased revenue with our automations.",
   
-  "testimonials.1.quote": "\"CreativeTrack has saved me countless hours of administrative work. Now I can focus on my design projects without worrying about tracking time or creating invoices.\"",
-  "testimonials.1.name": "Sarah Johnson",
-  "testimonials.1.role": "Graphic Designer",
+  "testimonials.1.quote": "\"The scheduling automation reduced our no-shows by 68% and freed up our receptionist for more strategic activities. The investment paid for itself in less than 2 months.\"",
+  "testimonials.1.name": "Dr. Patricia Santos",
+  "testimonials.1.role": "Dental Surgeon, Sorria+ Clinic",
   
-  "testimonials.2.quote": "\"Since using CreativeTrack, I've been able to increase my revenue by 30%. The automated invoices and payment processing have dramatically improved my cash flow.\"",
-  "testimonials.2.name": "Miguel Rodriguez",
-  "testimonials.2.role": "Filmmaker",
+  "testimonials.2.quote": "\"Our revenue grew 41% in just 4 months with the automatic follow-up and patient reactivation flows. The team is surprised when old patients return.\"",
+  "testimonials.2.name": "Dr. Marcos Oliveira",
+  "testimonials.2.role": "Owner, Elite Dental Center",
   
-  "testimonials.3.quote": "\"Our studio manages dozens of projects simultaneously. CreativeTrack has been a game-changer for our team organization and client billing.\"",
-  "testimonials.3.name": "Emily Chen",
-  "testimonials.3.role": "Creative Director",
+  "testimonials.3.quote": "\"The automated inventory control ended emergency purchases and we saved about $500 per month. The reports give us visibility we never had before.\"",
+  "testimonials.3.name": "Renata Lima",
+  "testimonials.3.role": "Administrator, Odonto Premium Network",
 
   // FAQ Section
   "faq.title": "Frequently Asked Questions",
-  "faq.subtitle": "Get answers to the most common questions about our platform.",
+  "faq.subtitle": "Get answers about the implementation and benefits of automation for your dental clinic.",
   
-  "faq.1.question": "How does the time tracking feature work?",
-  "faq.1.answer": "Our time tracking feature allows you to start and stop timers with a single click. You can track time for specific projects, clients, or tasks. The system automatically calculates hours worked and can apply different hourly rates based on the project. You can also add time manually for work done offline.",
+  "faq.1.question": "How long does it take to implement all automations?",
+  "faq.1.answer": "Complete implementation takes between 2-4 weeks, depending on your clinic's complexity and existing systems. We start with the highest impact modules: scheduling and reminders. Each additional module is implemented gradually to ensure team adaptation.",
   
-  "faq.2.question": "Can I customize my invoices?",
-  "faq.2.answer": "Yes, all plans include invoice customization options. You can add your logo, change colors, and edit the layout. Professional and Enterprise plans offer advanced customization, including custom fields, templates, and the ability to save multiple designs for different clients.",
+  "faq.2.question": "Do I need to change my current management system?",
+  "faq.2.answer": "No, our automations work with practically any dental management system on the market. We use native or API integrations, and in specific cases, we develop custom connectors. The idea is to enhance the systems you already use, not replace them.",
   
-  "faq.3.question": "What payment methods are supported?",
-  "faq.3.answer": "We support all major payment methods including credit cards, PayPal, bank transfers, and various regional payment options. Professional and Enterprise plans can also enable cryptocurrency payments and integrate with payment gateways like Stripe and Square.",
+  "faq.3.question": "How does implementation work?",
+  "faq.3.answer": "The process begins with a detailed analysis of your current workflow, followed by configuration of automations in Make and integration with your WhatsApp Business, systems and tools. We provide training for your team and a period of close follow-up for adjustments. Our implementation consultants ensure everything works perfectly.",
   
-  "faq.4.question": "Can I switch between languages?",
-  "faq.4.answer": "Yes, CreativeTrack supports multiple languages including English, Portuguese, Spanish, French, German, Japanese, and more. You can switch between languages at any time from your account settings or the language selector in the navigation menu.",
+  "faq.4.question": "What results can I expect and in what timeframe?",
+  "faq.4.answer": "On average, our partner clinics observe a 60% reduction in no-shows in the first month, a 30% increase in patient return rate within 3 months, and 15-20% savings in operational costs. The average ROI is 3-5 times the investment over a 6-month period, with a significant increase in patient satisfaction.",
   
-  "faq.5.question": "Is there a mobile app available?",
-  "faq.5.answer": "Yes, we offer mobile apps for both iOS and Android devices. The mobile apps include all essential features like time tracking, invoice management, and client communication, allowing you to manage your creative business on the go.",
+  "faq.5.question": "Do I need technical knowledge to use it?",
+  "faq.5.answer": "Absolutely not. Our team configures everything for you, and the management interface is extremely intuitive. We provide complete training for your team and ongoing support. Even system updates and maintenance are handled by us, so you can focus on patient care.",
 
   // CTA Section
-  "cta.title": "Ready to Transform Your <span>Creative Business?</span>",
-  "cta.subtitle": "Join thousands of creative professionals who are saving time, getting paid faster, and focusing on their craft.",
-  "cta.primary": "Start Your Free Trial",
-  "cta.secondary": "Schedule a Demo",
-  "cta.note": "No credit card required. 14-day free trial.",
+  "cta.title": "Ready to Revolutionize Your <span>Dental Clinic?</span>",
+  "cta.subtitle": "Join dozens of clinics that have automated their processes, reduced costs and increased revenue with our solutions.",
+  "cta.primary": "Schedule a Demo",
+  "cta.secondary": "Talk to a Consultant",
+  "cta.note": "Assisted implementation and 30-day guarantee.",
 
   // Footer
-  "footer.about": "CreativeTrack is the all-in-one platform for creative professionals to track time, generate invoices, and manage their business.",
+  "footer.about": "DentalAuto is the complete end-to-end automation platform for dental clinics to optimize processes, reduce costs and increase results.",
   
   "footer.product": "Product",
   "footer.product.features": "Features",
@@ -143,14 +143,14 @@ const enTranslations: Record<string, string> = {
   "footer.resources.community": "Community",
   "footer.resources.api": "API",
   
-  "footer.copyright": "© 2023 CreativeTrack. All rights reserved.",
+  "footer.copyright": "© 2025 DentalAuto. All rights reserved.",
   "footer.privacy": "Privacy Policy",
   "footer.terms": "Terms of Service",
   "footer.cookies": "Cookie Policy",
 
   // Notifications
-  "notifications.invoice": "Invoice Generated",
-  "notifications.reminder": "Project Reminder"
+  "notifications.appointment": "Appointment Confirmed",
+  "notifications.reminder": "Appointment Reminder"
 };
 
 export default enTranslations;
